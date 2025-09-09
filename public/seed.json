@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "id": "c1",
+      "question": "What is JSX in React?",
+      "answer": "A syntax extension that lets you write HTML-like code inside JavaScript."
+    },
+    {
+      "id": "c2",
+      "question": "What hook would you use to manage local component state?",
+      "answer": "The useState hook."
+    },
+    {
+      "id": "c3",
+      "question": "What does the useEffect hook do?",
+      "answer": "It lets you perform side effects (like fetching data or subscribing) after render."
+    },
+    {
+      "id": "c4",
+      "question": "What is prop drilling?",
+      "answer": "Passing data down through many levels of components unnecessarily."
+    },
+    {
+      "id": "c5",
+      "question": "What is the difference between a controlled and uncontrolled component?",
+      "answer": "Controlled components have their form data managed by React state; uncontrolled components rely on the DOM."
+    }
+  ]
+}

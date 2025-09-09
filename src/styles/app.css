@@ -1,0 +1,144 @@
+* {
+  font-family: 'TASA Explorer', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #242423;
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+#deck-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3em;
+  color: #f5cb5c;
+  text-shadow: 0px 0px 10px #f5cc5c8b;
+  user-select: none;
+}
+
+.subtitle {
+  font-size: 2em;
+  text-shadow: none;
+  margin-top: 0;
+}
+
+#legend {
+  opacity: 0.5;
+  color: #f5cb5c;
+}
+
+.btns-cont {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #f5cb5c;
+  color: #f5cb5c;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #f5cb5c;
+  color: #242423;
+}
+
+.cancel {
+  background-color: transparent;
+  border-color: #ff5a5f;
+  color: #ff5a5f;
+}
+
+.cancel:hover {
+  background-color: #ff5a5f;
+  color: #333533;
+}
+
+.btn:active {
+  background-color: #be9e46;
+  border-color: #be9e46;
+  transform: scale(0.9);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cancel:active {
+  background-color: #cc474c;
+  border-color: #cc474c;
+}
+
+#newCard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #333533;
+  border-radius: 6px;
+  padding: 30px;
+}
+
+#newCard-form textarea {
+  text-align: center;
+  background-color: #e8eddf;
+}
+
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #cfdbd5;
+  color: #333533;
+  width: 90%;
+  border-radius: 6px;
+  padding: 30px 10px;
+  cursor: pointer;
+  transition: 0.2s all;
+  user-select: none;
+  line-height: 24px;
+  gap: 10px;
+  max-width: 600px;
+  min-height: 150px;
+}
+
+.card-cont:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 2px 20px 4px #cc474c;
+}
+
+.card-cont p {
+  line-height: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 0;
+}
