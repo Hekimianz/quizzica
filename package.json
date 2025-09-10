@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "shuffle": "^0.2.5",
     "uuid": "^13.0.0"
   },
   "devDependencies": {

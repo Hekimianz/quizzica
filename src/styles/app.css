@@ -21,7 +21,8 @@ main {
   flex: 1;
 }
 
-#deck-cont {
+#deck-cont,
+#quiz-cont {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -136,6 +137,28 @@ main {
 
 .card-cont p {
   line-height: 20px;
+}
+
+.quiz-card {
+  user-select: none;
+  background-color: #cfdbd5;
+  color: #242423;
+  width: 300px;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.quiz-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 10px 2px #f5cb5c;
+}
+
+.quiz-card:active {
+  transform: scale(0.9);
 }
 
 footer {

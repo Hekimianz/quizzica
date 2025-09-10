@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useLocalStorageState } from './hooks/useLocalStorageState';
 import Deck from './Deck';
 import Quiz from './Quiz';
-import Results from './Results';
 import './styles/app.css';
 function App() {
   const [cards, setCards] = useLocalStorageState('cards', []);
@@ -21,8 +20,7 @@ function App() {
   return (
     <>
       {mode === 'deck' && <Deck setMode={setMode} />}
-      {mode === 'quiz' && <Quiz />}
-      {mode === 'results' && <Results />}
+      {mode === 'quiz' && <Quiz cards={cards} setMode={setMode} />}
       <footer>Made with ♥️ by Aram Hekimian</footer>
     </>
   );
